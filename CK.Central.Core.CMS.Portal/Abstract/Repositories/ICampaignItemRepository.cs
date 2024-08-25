@@ -1,0 +1,16 @@
+﻿using CK.Central.Core.Abstract.Repositories;
+using CK.Central.Core.DataObjects.Entity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using CK.Central.Core.Domain.DataObjects.CMS.Entity;
+
+namespace CK.Central.Core.CMS.Portal.Abstract.Repositories
+{
+    public interface ICampaignItemRepository : IBaseRepository<CampaignItemEntity>
+    {
+        Task<bool> InsertMany(List<CampaignItemEntity> entities);
+    }
+}

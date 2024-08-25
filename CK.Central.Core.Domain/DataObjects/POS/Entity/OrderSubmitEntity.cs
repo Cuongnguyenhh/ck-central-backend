@@ -1,0 +1,44 @@
+﻿using CK.Central.Core.DataObjects.Entity;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CK.Central.Core.Domain.DataObjects.POS.Entity
+{
+    [Serializable]
+    [Table("order_submit")]
+    public partial class OrderSubmitEntity : BaseEntity
+    {
+        [DataMember]
+        [Column("fk_order_uuid")]
+        public Guid OrderUUID { get; set; }
+
+        [DataMember]
+        [Column("fk_type_uuid")]
+        public Guid TypeUUID { get; set; }
+
+        [DataMember]
+        [Column("fk_status_uuid")]
+        public Guid StatusUUID { get; set; }
+
+        [DataMember]
+        [Column("fk_service_uuid")]
+        public Guid ServiceUUID { get; set; }
+
+        [DataMember]
+        [Column("content_payload_json", TypeName = "json")]
+        public string? ContentPayloadJson { get; set; }
+
+        [DataMember]
+        [Column("content_request_json", TypeName = "json")]
+        public string? ContentRequestJson { get; set; }
+
+        [DataMember]
+        [Column("content_response_json", TypeName = "json")]
+        public string? ContentResponseJson { get; set; }
+    }
+}

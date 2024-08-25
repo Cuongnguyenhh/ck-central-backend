@@ -1,0 +1,198 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="App.Metrics.AspNetCore.Health" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.AspNetCore.Health.Core" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.AspNetCore.Health.Endpoints" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.Extensions.HealthChecks" Version="4.3.0" />
+    <PackageReference Include="App.Metrics.Health.Abstractions" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.Health.Checks.Http" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.Health.Checks.Network" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.Health.Checks.Process" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.Health.Checks.Sql" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.Health.Core" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.Health.Formatters.Ascii" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.Health.Reporting.Metrics" Version="3.2.0" />
+    <PackageReference Include="Asp.Versioning.Abstractions" Version="8.1.0" />
+    <PackageReference Include="Asp.Versioning.Http" Version="8.1.0" />
+    <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.ApplicationStatus" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Elasticsearch" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Hangfire" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Kafka" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Kubernetes" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Network" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Publisher.ApplicationInsights" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Redis" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.SignalR" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.System" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Core" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Data" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.PostgreSQL.Storage" Version="8.0.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="8.0.1" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="AutoMapper.Collection" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.EnumMapping" Version="3.2.0" />
+    <PackageReference Include="AutoMapper.Extensions.ExpressionMapping" Version="7.0.1" />
+    <PackageReference Include="Confluent.Kafka" Version="2.5.2" />
+    <PackageReference Include="Confluent.SchemaRegistry" Version="2.5.2" />
+    <PackageReference Include="Confluent.SchemaRegistry.Sep.Json" Version="12.0.2" />
+    <PackageReference Include="Confluent.SchemaRegistry.Serdes.Avro" Version="2.5.2" />
+    <PackageReference Include="Confluent.SchemaRegistry.Serdes.Json" Version="2.5.2" />
+    <PackageReference Include="Confluent.SchemaRegistry.Serdes.Protobuf" Version="2.5.2" />
+    <PackageReference Include="EFCore.BulkExtensions" Version="8.1.0" />
+    <PackageReference Include="Elastic.Apm" Version="1.28.4" />
+    <PackageReference Include="Elastic.Apm.AspNetCore" Version="1.28.4" />
+    <PackageReference Include="Elastic.Apm.Elasticsearch" Version="1.28.4" />
+    <PackageReference Include="Elastic.Apm.EntityFrameworkCore" Version="1.28.4" />
+    <PackageReference Include="Elastic.Apm.Extensions.Hosting" Version="1.28.4" />
+    <PackageReference Include="Elastic.Apm.Extensions.Logging" Version="1.28.4" />
+    <PackageReference Include="Elastic.Apm.MongoDb" Version="1.28.4" />
+    <PackageReference Include="Elastic.Apm.NetCoreAll" Version="1.28.4" />
+    <PackageReference Include="Elastic.Apm.SqlClient" Version="1.23.0" />
+    <PackageReference Include="Elastic.Clients.Elasticsearch" Version="8.15.2" />
+    <PackageReference Include="Elastic.CommonSchema" Version="8.11.1" />
+    <PackageReference Include="Elastic.CommonSchema.Serilog" Version="8.11.1" />
+    <PackageReference Include="Elastic.Serilog.Sinks" Version="8.11.1" />
+    <PackageReference Include="Elasticsearch.Net" Version="7.17.5" />
+    <PackageReference Include="FluentMigrator" Version="5.2.0" />
+    <PackageReference Include="FluentMigrator.Abstractions" Version="5.2.0" />
+    <PackageReference Include="FluentMigrator.Extensions.Postgres" Version="5.2.0" />
+    <PackageReference Include="FluentMigrator.Extensions.SqlAnywhere" Version="3.3.1" />
+    <PackageReference Include="FluentMigrator.Runner" Version="5.2.0" />
+    <PackageReference Include="FluentMigrator.Runner.Core" Version="5.2.0" />
+    <PackageReference Include="FluentMigrator.Runner.Postgres" Version="5.2.0" />
+    <PackageReference Include="FluentMigrator.Runner.SqlAnywhere" Version="3.3.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.2" />
+    <PackageReference Include="Hangfire" Version="1.8.14" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.14" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.14" />
+    <PackageReference Include="Hangfire.InMemory" Version="0.10.3" />
+    <PackageReference Include="Hangfire.NetCore" Version="1.8.14" />
+    <PackageReference Include="Hangfire.PostgreSql" Version="1.20.9" />
+    <PackageReference Include="Hangfire.PostgreSql.NetCore" Version="1.4.3" />
+    <PackageReference Include="MediatR" Version="12.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.HealthChecks" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="8.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="8.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="8.0.8" />
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="MongoDB.Bson" Version="2.28.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.28.0" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.28.0" />
+    <PackageReference Include="MongoDB.Driver.GridFS" Version="2.28.0" />
+    <PackageReference Include="MongoDB.EntityFrameworkCore" Version="8.1.0" />
+    <PackageReference Include="MongoDB.Libmongocrypt" Version="1.11.0" />
+    <PackageReference Include="NEST" Version="7.17.5" />
+    <PackageReference Include="NEST.7xUpgradeAssistant" Version="7.1.0" />
+    <PackageReference Include="NEST.JsonNetSerializer" Version="7.17.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="4.0.1" />
+    <PackageReference Include="Npgsql" Version="8.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite" Version="8.0.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime" Version="8.0.4" />
+    <PackageReference Include="Npgsql.Json.NET" Version="8.0.3" />
+    <PackageReference Include="Npgsql.NodaTime" Version="8.0.3" />
+    <PackageReference Include="NServiceBus.RabbitMQ" Version="9.1.0" />
+    <PackageReference Include="Polly" Version="8.4.1" />
+    <PackageReference Include="Polly.Caching.Distributed" Version="3.0.1" />
+    <PackageReference Include="Polly.Caching.IDistributedCache" Version="1.0.4" />
+    <PackageReference Include="Polly.Caching.Memory" Version="3.0.2" />
+    <PackageReference Include="Polly.Caching.MemoryCache-Signed" Version="1.1.0" />
+    <PackageReference Include="Polly.Caching.Serialization.Json" Version="3.0.0" />
+    <PackageReference Include="Polly.Contrib.MutableBulkheadPolicy" Version="1.0.0" />
+    <PackageReference Include="Polly.Contrib.WaitAndRetry" Version="1.1.1" />
+    <PackageReference Include="Polly.Core" Version="8.4.1" />
+    <PackageReference Include="Polly.Extensions" Version="8.4.1" />
+    <PackageReference Include="Polly.RateLimiting" Version="8.4.1" />
+    <PackageReference Include="Polly.Testing" Version="8.4.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+    <PackageReference Include="RabbitMQ.Client.Core.DependencyInjection" Version="5.0.0" />
+    <PackageReference Include="RestSharp" Version="111.4.1" />
+    <PackageReference Include="RestSharp.Serializers.NewtonsoftJson" Version="111.4.1" />
+    <PackageReference Include="RestSharp.Serializers.SystemTextJson" Version="106.15.0" />
+    <PackageReference Include="RestSharp.Serializers.Utf8Json" Version="106.15.0" />
+    <PackageReference Include="RestSharp.Serializers.Xml" Version="111.4.1" />
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+    <PackageReference Include="Scrutor.AspNetCore" Version="3.3.0" />
+    <PackageReference Include="Serilog" Version="4.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+    <PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
+    <PackageReference Include="Serilog.Expressions" Version="5.0.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Serilog.Formatting.Compact" Version="3.0.0" />
+    <PackageReference Include="Serilog.Formatting.Elasticsearch" Version="10.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.2" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="2.0.0" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="3.0.0" />
+    <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="10.0.0" />
+    <PackageReference Include="Serilog.Sinks.Email" Version="4.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.MongoDB" Version="5.4.1" />
+    <PackageReference Include="Serilog.Sinks.PeriodicBatching" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.RabbitMQ" Version="7.0.2" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.Trace" Version="4.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.AspNetCore" Version="10.2.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Core" Version="10.2.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Newtonsoft" Version="10.2.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.1" />
+    <PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
+    <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+  </ItemGroup>
+
+</Project>

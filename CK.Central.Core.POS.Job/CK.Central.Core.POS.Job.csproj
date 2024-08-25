@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CK.Central.Core.Domain\CK.Central.Core.Domain.csproj" />
+    <ProjectReference Include="..\CK.Central.Core.POS\CK.Central.Core.POS.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstract\Repositories\" />
+  </ItemGroup>
+
+</Project>

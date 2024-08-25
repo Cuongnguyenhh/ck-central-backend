@@ -1,0 +1,6 @@
+@CK.Central.API.POS.GrabMart.Stock_HostAddress = http://localhost:5136
+
+GET {{CK.Central.API.POS.GrabMart.Stock_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

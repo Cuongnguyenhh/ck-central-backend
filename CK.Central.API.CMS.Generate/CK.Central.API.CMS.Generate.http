@@ -1,0 +1,6 @@
+@CK.Central.API.CMS.Generate_HostAddress = http://localhost:5062
+
+GET {{CK.Central.API.CMS.Generate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

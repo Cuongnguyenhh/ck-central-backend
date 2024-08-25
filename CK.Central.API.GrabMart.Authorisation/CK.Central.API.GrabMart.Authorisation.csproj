@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e08454d6-b51b-45a3-b737-2660ba733171</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CK.Central.Backend.ServiceDefaults\CK.Central.Backend.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\CK.Central.Core.GrabMart.Authorisation\CK.Central.Core.GrabMart.Authorisation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Endpoints\" />
+  </ItemGroup>
+
+</Project>

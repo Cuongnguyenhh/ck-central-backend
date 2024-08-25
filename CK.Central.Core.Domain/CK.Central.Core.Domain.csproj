@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CK.Central.Core\CK.Central.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataObjects\GrabMart\Model\" />
+    <Folder Include="DataObjects\Shared\Model\" />
+  </ItemGroup>
+
+</Project>

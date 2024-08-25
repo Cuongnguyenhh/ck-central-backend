@@ -1,0 +1,6 @@
+@CK.Central.API.POS.Job_HostAddress = http://localhost:5278
+
+GET {{CK.Central.API.POS.Job_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

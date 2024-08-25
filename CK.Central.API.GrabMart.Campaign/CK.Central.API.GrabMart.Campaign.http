@@ -1,0 +1,6 @@
+@CK.Central.API.GrabMart.Campaign_HostAddress = http://localhost:5074
+
+GET {{CK.Central.API.GrabMart.Campaign_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
